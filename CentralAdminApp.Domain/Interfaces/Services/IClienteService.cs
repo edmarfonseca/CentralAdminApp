@@ -2,7 +2,7 @@
 
 namespace CentralAdminApp.Domain.Interfaces.Services
 {
-    public interface ISistemaService : IServiceBase<SistemaResponse, SistemaRequest>
+    public interface IClienteService : IServiceBase<ClienteResponse, ClienteRequest>
     {
     }
 }

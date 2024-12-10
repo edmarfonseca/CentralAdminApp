@@ -1,8 +1,7 @@
 ﻿namespace CentralAdminApp.Domain.Dtos
 {
-    public class ClienteResponse
+    public class ClienteRequest
     {
-        public int Id { get; set; }
         public string? Nome { get; set; }
         public string? CpfCnpj { get; set; }
         public string? Logradouro { get; set; }
@@ -11,7 +10,5 @@
         public string? Cidade { get; set; }
         public string? Uf { get; set; }
         public string? Cep { get; set; }
-        public DateTime? DataInclusao { get; set; }
-        public DateTime? DataAlteracao { get; set; }
     }
 }

@@ -111,8 +111,9 @@ namespace CentralAdminApp.Domain.Services
         {
             var response = new List<SistemaResponse>();
 
-            var clientes = _sistemaRepository.Get();
-            foreach (var item in clientes)
+            var sistemas = _sistemaRepository.Get();
+
+            foreach (var item in sistemas)
             {
                 response.Add(new SistemaResponse
                 {

@@ -59,7 +59,7 @@ namespace CentralAdminApp.Domain.Services
                 Nome = usuario.Nome,
                 Email = usuario.Email,
                 DataInclusao = usuario.DataInclusao,
-                Cliente = new ClienteResponse
+                Cliente = new CriarUsuarioClienteResponse
                 {
                     Id = cliente.Id,
                     Nome = cliente.Nome,
