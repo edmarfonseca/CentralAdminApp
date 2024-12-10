@@ -251,46 +251,46 @@ namespace CentralAdminApp.Infra.Data.Migrations
             migrationBuilder.InsertData(
                 table: "TB_CLIENTE",
                 columns: new[] { "ID", "ATIVO", "BAIRRO", "CEP", "CIDADE", "CPF_CNPJ", "DATA_ALTERACAO", "DATA_INCLUSAO", "LOGRADOURO", "NOME", "NUMERO", "UF" },
-                values: new object[] { 1, true, "Centro", "20031140", "Rio de Janeiro", "26263267000165", new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), "Rua México", "Facto Soluções em TI", 31, "RJ" });
+                values: new object[] { 1, true, "Centro", "20031140", "Rio de Janeiro", "26263267000165", new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), "Rua México", "Facto Soluções em TI", 31, "RJ" });
 
             migrationBuilder.InsertData(
                 table: "TB_SISTEMA",
                 columns: new[] { "ID", "ATIVO", "CODIGO", "DATA_ALTERACAO", "DATA_INCLUSAO", "NOME", "URL" },
-                values: new object[] { 1, true, "CA", new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), "Central Admin", "http://localhost:5232/" });
+                values: new object[] { 1, true, "CA", new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), "Central Admin", "http://localhost:5232/" });
 
             migrationBuilder.InsertData(
                 table: "TB_API",
                 columns: new[] { "ID", "ATIVO", "DATA_ALTERACAO", "DATA_INCLUSAO", "NOME", "SISTEMA_ID", "URI" },
-                values: new object[] { 1, true, new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), "Criação de Usuário", 1, "api/usuarios/criar" });
+                values: new object[] { 1, true, new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), "Criação de Usuário", 1, "api/usuarios/criar" });
 
             migrationBuilder.InsertData(
                 table: "TB_CLIENTE_SISTEMA",
                 columns: new[] { "ID", "ATIVO", "CLIENTE_ID", "DATA_ALTERACAO", "DATA_INCLUSAO", "SISTEMA_ID" },
-                values: new object[] { 1, true, 1, new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), 1 });
+                values: new object[] { 1, true, 1, new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), 1 });
 
             migrationBuilder.InsertData(
                 table: "TB_PERFIL",
                 columns: new[] { "ID", "ATIVO", "DATA_ALTERACAO", "DATA_INCLUSAO", "NOME", "SISTEMA_ID" },
-                values: new object[] { 1, true, new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), "ADMINISTRADOR", 1 });
+                values: new object[] { 1, true, new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), "ADMINISTRADOR", 1 });
 
             migrationBuilder.InsertData(
                 table: "TB_USUARIO",
                 columns: new[] { "ID", "ATIVO", "CLIENTE_ID", "DATA_ALTERACAO", "DATA_INCLUSAO", "EMAIL", "NOME", "SENHA" },
                 values: new object[,]
                 {
-                    { 1, true, 1, new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), "factoti@factoti.com.br", "Facto Soluções", "82a2c0a772363847406da82a26e5f94cda0d4e54b9c1edde375c63610bfe8386" },
-                    { 2, true, 1, new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), "edmarfonseca12@gmail.com", "Edmar Fonseca", "e61fef737df8527480b6f25954acd71e17dbd0175bc7b377174f0614274b0535" }
+                    { 1, true, 1, new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), "factoti@factoti.com.br", "Facto Soluções", "82a2c0a772363847406da82a26e5f94cda0d4e54b9c1edde375c63610bfe8386" },
+                    { 2, true, 1, new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), "edmarfonseca12@gmail.com", "Edmar Fonseca", "e61fef737df8527480b6f25954acd71e17dbd0175bc7b377174f0614274b0535" }
                 });
 
             migrationBuilder.InsertData(
                 table: "TB_PERFIL_API",
                 columns: new[] { "ID", "API_ID", "ATIVO", "DATA_ALTERACAO", "DATA_INCLUSAO", "PERFIL_ID" },
-                values: new object[] { 1, 1, true, new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), 1 });
+                values: new object[] { 1, 1, true, new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), 1 });
 
             migrationBuilder.InsertData(
                 table: "TB_USUARIO_PERFIL",
                 columns: new[] { "ID", "ATIVO", "CLIENTE_SISTEMA_ID", "DATA_ALTERACAO", "DATA_INCLUSAO", "PERFIL_ID", "USUARIO_ID" },
-                values: new object[] { 1, true, 1, new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), new DateTime(2024, 12, 7, 3, 46, 35, 57, DateTimeKind.Local).AddTicks(6127), 1, 1 });
+                values: new object[] { 1, true, 1, new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), new DateTime(2024, 12, 9, 23, 34, 8, 20, DateTimeKind.Local).AddTicks(5365), 1, 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_TB_API_SISTEMA_ID",
@@ -343,9 +343,9 @@ namespace CentralAdminApp.Infra.Data.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_TB_SISTEMA_URL",
+                name: "IX_TB_SISTEMA_CODIGO",
                 table: "TB_SISTEMA",
-                column: "URL",
+                column: "CODIGO",
                 unique: true);
 
             migrationBuilder.CreateIndex(

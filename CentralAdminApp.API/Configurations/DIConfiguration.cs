@@ -16,6 +16,8 @@ namespace CentralAdminApp.API.Configurations
             services.AddTransient<IClienteRepository, ClienteRepository>();
             services.AddTransient<IUsuarioPerfilRepository, UsuarioPerfilRepository>();
             services.AddTransient<IJwtTokenService, JwtTokenService>();
+            services.AddTransient<ISistemaService, SistemaService>();
+            services.AddTransient<ISistemaRepository, SistemaRepository>();
         }
     }
 }

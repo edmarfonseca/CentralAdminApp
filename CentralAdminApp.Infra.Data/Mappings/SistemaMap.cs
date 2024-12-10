@@ -31,7 +31,7 @@ namespace CentralAdminApp.Infra.Data.Mappings
                .IsRequired();
 
 
-            builder.HasIndex(t => t.Url)
+            builder.HasIndex(t => t.Codigo)
                 .IsUnique();
         }
     }
