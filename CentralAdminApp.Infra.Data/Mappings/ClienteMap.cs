@@ -27,12 +27,15 @@ namespace CentralAdminApp.Infra.Data.Mappings
 
             builder.Property(t => t.Logradouro)
                 .HasColumnName("LOGRADOURO")
-                .HasMaxLength(50)
+                .HasMaxLength(100)
                 .IsRequired();
 
             builder.Property(t => t.Numero)
                 .HasColumnName("NUMERO")
                 .IsRequired();
+
+            builder.Property(t => t.Complemento)
+                .HasColumnName("COMPLEMENTO");
 
             builder.Property(t => t.Bairro)
                 .HasColumnName("BAIRRO")

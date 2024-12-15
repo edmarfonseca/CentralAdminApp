@@ -3,6 +3,7 @@ using CentralAdminApp.Domain.Interfaces.Security;
 using CentralAdminApp.Domain.Interfaces.Services;
 using CentralAdminApp.Domain.Services;
 using CentralAdminApp.Infra.Data.Repositories;
+using CentralAdminApp.Infra.Data.Secondary.Repositories;
 using CentralAdminApp.Infra.Security.Services;
 
 namespace CentralAdminApp.API.Configurations
@@ -19,6 +20,8 @@ namespace CentralAdminApp.API.Configurations
             services.AddTransient<IJwtTokenService, JwtTokenService>();
             services.AddTransient<ISistemaService, SistemaService>();
             services.AddTransient<ISistemaRepository, SistemaRepository>();
+            services.AddTransient<IUfService, UfService>();
+            services.AddTransient<IUfRepository, UfRepository>();
         }
     }
 }

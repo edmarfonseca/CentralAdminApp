@@ -24,6 +24,7 @@ namespace CentralAdminApp.Domain.Services
                 CpfCnpj = dto.CpfCnpj,
                 Logradouro = dto.Logradouro,
                 Numero = dto.Numero,
+                Complemento = dto.Complemento,
                 Bairro = dto.Bairro,
                 Cidade = dto.Cidade,
                 Uf = dto.Uf,
@@ -47,20 +48,7 @@ namespace CentralAdminApp.Domain.Services
 
             _clienteRepository.Add(cliente);
 
-            return new ClienteResponse
-            {
-                Id = cliente.Id,
-                Nome = cliente.Nome,
-                CpfCnpj = cliente.CpfCnpj,
-                Logradouro = cliente.Logradouro,
-                Numero = cliente.Numero,
-                Bairro = cliente.Bairro,
-                Cidade = cliente.Cidade,
-                Uf = cliente.Uf,
-                Cep = cliente.Cep,
-                DataInclusao = cliente.DataInclusao,
-                DataAlteracao = cliente.DataAlteracao
-            };
+            return GetResponse(cliente);
         }
 
         public ClienteResponse Update(int id, ClienteRequest dto)
@@ -74,6 +62,7 @@ namespace CentralAdminApp.Domain.Services
             cliente.CpfCnpj = dto.CpfCnpj;
             cliente.Logradouro = dto.Logradouro;
             cliente.Numero = dto.Numero;
+            cliente.Complemento = dto.Complemento;
             cliente.Bairro = dto.Bairro;
             cliente.Cidade = dto.Cidade;
             cliente.Uf = dto.Uf;
@@ -94,20 +83,7 @@ namespace CentralAdminApp.Domain.Services
 
             _clienteRepository.Update(cliente);
 
-            return new ClienteResponse
-            {
-                Id = cliente.Id,
-                Nome = cliente.Nome,
-                CpfCnpj = cliente.CpfCnpj,
-                Logradouro = cliente.Logradouro,
-                Numero = cliente.Numero,
-                Bairro = cliente.Bairro,
-                Cidade = cliente.Cidade,
-                Uf = cliente.Uf,
-                Cep = cliente.Cep,
-                DataInclusao = cliente.DataInclusao,
-                DataAlteracao = cliente.DataAlteracao
-            };
+            return GetResponse(cliente);
         }
 
         public ClienteResponse Delete(int id)
@@ -122,20 +98,7 @@ namespace CentralAdminApp.Domain.Services
 
             _clienteRepository.Delete(cliente);
 
-            return new ClienteResponse
-            {
-                Id = cliente.Id,
-                Nome = cliente.Nome,
-                CpfCnpj = cliente.CpfCnpj,
-                Logradouro = cliente.Logradouro,
-                Numero = cliente.Numero,
-                Bairro = cliente.Bairro,
-                Cidade = cliente.Cidade,
-                Uf = cliente.Uf,
-                Cep = cliente.Cep,
-                DataInclusao = cliente.DataInclusao,
-                DataAlteracao = cliente.DataAlteracao
-            };
+            return GetResponse(cliente);
         }
 
         public List<ClienteResponse> Get()
@@ -146,20 +109,7 @@ namespace CentralAdminApp.Domain.Services
 
             foreach (var cliente in clientes)
             {
-                response.Add(new ClienteResponse
-                {
-                    Id = cliente.Id,
-                    Nome = cliente.Nome,
-                    CpfCnpj = cliente.CpfCnpj,
-                    Logradouro = cliente.Logradouro,
-                    Numero = cliente.Numero,
-                    Bairro = cliente.Bairro,
-                    Cidade = cliente.Cidade,
-                    Uf = cliente.Uf,
-                    Cep = cliente.Cep,
-                    DataInclusao = cliente.DataInclusao,
-                    DataAlteracao = cliente.DataAlteracao
-                });
+                response.Add(GetResponse(cliente));
             }
 
             return response;
@@ -172,6 +122,11 @@ namespace CentralAdminApp.Domain.Services
             if (cliente == null)
                 throw new ApplicationException("Cliente não encontrado, verifique o ID informado.");
 
+            return GetResponse(cliente);
+        }
+
+        public ClienteResponse GetResponse(Cliente cliente)
+        {
             return new ClienteResponse
             {
                 Id = cliente.Id,
@@ -179,6 +134,7 @@ namespace CentralAdminApp.Domain.Services
                 CpfCnpj = cliente.CpfCnpj,
                 Logradouro = cliente.Logradouro,
                 Numero = cliente.Numero,
+                Complemento = cliente.Complemento,
                 Bairro = cliente.Bairro,
                 Cidade = cliente.Cidade,
                 Uf = cliente.Uf,

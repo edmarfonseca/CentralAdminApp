@@ -16,7 +16,7 @@ namespace CentralAdminApp.Domain.Validations
 
             RuleFor(u => u.Logradouro)
             .NotEmpty().WithMessage("O logradouro do cliente é obrigatório.")
-            .MaximumLength(50).WithMessage("O logradouro do cliente deve conter, no máximo, 50 caracteres.");
+            .MaximumLength(100).WithMessage("O logradouro do cliente deve conter, no máximo, 100 caracteres.");
 
             RuleFor(u => u.Numero)
             .NotEmpty().WithMessage("O número do endereço do cliente é obrigatório.");

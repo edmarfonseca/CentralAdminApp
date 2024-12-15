@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CentralAdminApp.Domain\CentralAdminApp.Domain.csproj" />
+    <ProjectReference Include="..\CentralAdminApp.Infra.Data.Secundary\CentralAdminApp.Infra.Data.Secondary.csproj" />
     <ProjectReference Include="..\CentralAdminApp.Infra.Data\CentralAdminApp.Infra.Data.csproj" />
     <ProjectReference Include="..\CentralAdminApp.Infra.Security\CentralAdminApp.Infra.Security.csproj" />
   </ItemGroup>

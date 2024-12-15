@@ -2,8 +2,7 @@
 using System.Text;
 
 namespace CentralAdminApp.Domain.Helpers
-{
-    
+{    
     public class SHA256Helper
     {
         public static string Encrypt(string value)
