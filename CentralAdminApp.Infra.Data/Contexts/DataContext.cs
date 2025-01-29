@@ -9,8 +9,8 @@ namespace CentralAdminApp.Infra.Data.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=localhost;Database=centraladmindb;Uid=developer;Pwd='1234567'";
-            var serverVersion = new MySqlServerVersion(new Version(8, 0, 40));
+            var connectionString = "Server=localhost;Database=centraladmindb;Uid=developer;Pwd='@devfullstack2520'";
+            var serverVersion = new MySqlServerVersion(new Version(9, 2, 0));
 
             optionsBuilder.UseMySql(connectionString, serverVersion);
         }

@@ -2,7 +2,7 @@
 {
     public class DataSecondaryContextSettings
     {
-        public static string Host => "mongodb://localhost:27017/";
+        public static string Host => "mongodb+srv://developer:devfullstack2520@cluster0.xd5hv.mongodb.net/";
         public static string Database => "centraladminsecdb";
     }
 }

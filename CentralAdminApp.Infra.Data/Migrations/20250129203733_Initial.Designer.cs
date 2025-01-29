@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CentralAdminApp.Infra.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241214204343_AddColumnComplementoCliente")]
-    partial class AddColumnComplementoCliente
+    [Migration("20250129203733_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,8 +76,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                         {
                             Id = 1,
                             Ativo = true,
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             Nome = "Criação de Usuário",
                             SistemaId = 1,
                             Uri = "api/usuarios/criar"
@@ -172,8 +172,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                             Cep = "20031140",
                             Cidade = "Rio de Janeiro",
                             CpfCnpj = "26263267000165",
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             Logradouro = "Rua México",
                             Nome = "Facto Soluções em TI",
                             Numero = 31,
@@ -225,8 +225,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                             Id = 1,
                             Ativo = true,
                             ClienteId = 1,
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             SistemaId = 1
                         });
                 });
@@ -276,8 +276,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                         {
                             Id = 1,
                             Ativo = true,
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             Nome = "ADMINISTRADOR",
                             SistemaId = 1
                         });
@@ -327,8 +327,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                             Id = 1,
                             ApiId = 1,
                             Ativo = true,
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             PerfilId = 1
                         });
                 });
@@ -385,8 +385,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                             Id = 1,
                             Ativo = true,
                             Codigo = "CA",
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             Nome = "Central Admin",
                             Url = "http://localhost:5232/"
                         });
@@ -450,8 +450,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                             Id = 1,
                             Ativo = true,
                             ClienteId = 1,
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             Email = "factoti@factoti.com.br",
                             Nome = "Facto Soluções",
                             Senha = "82a2c0a772363847406da82a26e5f94cda0d4e54b9c1edde375c63610bfe8386"
@@ -461,8 +461,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                             Id = 2,
                             Ativo = true,
                             ClienteId = 1,
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             Email = "edmarfonseca12@gmail.com",
                             Nome = "Edmar Fonseca",
                             Senha = "e61fef737df8527480b6f25954acd71e17dbd0175bc7b377174f0614274b0535"
@@ -519,8 +519,8 @@ namespace CentralAdminApp.Infra.Data.Migrations
                             Id = 1,
                             Ativo = true,
                             ClienteSistemaId = 1,
-                            DataAlteracao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
-                            DataInclusao = new DateTime(2024, 12, 14, 17, 43, 38, 108, DateTimeKind.Local).AddTicks(191),
+                            DataAlteracao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
+                            DataInclusao = new DateTime(2025, 1, 29, 17, 37, 29, 480, DateTimeKind.Local).AddTicks(1515),
                             PerfilId = 1,
                             UsuarioId = 1
                         });
