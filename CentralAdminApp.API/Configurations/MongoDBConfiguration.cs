@@ -4,7 +4,6 @@ using CentralAdminApp.Domain.Entities;
 using CentralAdminApp.Infra.Data.Secondary.Contexts;
 using MongoDB.Driver;
 using CentralAdminApp.Domain.Helpers;
-using MongoDB.Bson.Serialization.Conventions;
 
 namespace CentralAdminApp.API.Configurations
 {

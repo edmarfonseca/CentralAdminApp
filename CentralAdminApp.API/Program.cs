@@ -1,6 +1,4 @@
 using CentralAdminApp.API.Configurations;
-using CentralAdminApp.Infra.Data.Secondary.Settings;
-using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +8,7 @@ builder.Services.AddRouting(map => { map.LowercaseUrls = true; });
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddCorsConfiguration();
 builder.Services.AddDependencyInjection();
+builder.Services.AddJwtSecurity();
 
 MongoDBConfiguration.AddMongoDBConfiguration();
 
@@ -18,6 +17,7 @@ var app = builder.Build();
 app.UseSwaggerConfiguration();
 app.UseCorsConfiguration();
 
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

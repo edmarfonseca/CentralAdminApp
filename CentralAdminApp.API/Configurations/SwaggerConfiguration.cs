@@ -34,7 +34,7 @@ namespace CentralAdminApp.API.Configurations
                         Url = new Uri("https://opensource.org/licenses/MIT")
                     }
                 });
-                /*
+
                 // Configurando esquema de autenticação JWT
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -46,7 +46,7 @@ namespace CentralAdminApp.API.Configurations
                 });
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
-            {
+                {
                     {
                         new OpenApiSecurityScheme
                         {
@@ -58,8 +58,8 @@ namespace CentralAdminApp.API.Configurations
                         },
                         Array.Empty<string>()
                     }
-                
-            });*/
+
+                });
             });
         }
 

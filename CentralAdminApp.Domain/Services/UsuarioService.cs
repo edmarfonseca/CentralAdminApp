@@ -73,7 +73,7 @@ namespace CentralAdminApp.Domain.Services
             var usuario = _usuarioRepository.Find(dto.Email, SHA256Helper.Encrypt(dto.Senha));
 
             if (usuario == null)
-                throw new ApplicationException("E-mail/Senha incorretos.");
+                throw new ApplicationException("E-mail ou senha incorretos.");
 
             var perfis = _usuarioPerfilRepository.Get(usuario);
 

@@ -1,10 +1,12 @@
 ﻿using CentralAdminApp.Domain.Dtos;
 using CentralAdminApp.Domain.Interfaces.Services;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CentralAdminApp.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ClientesController : ControllerBase
