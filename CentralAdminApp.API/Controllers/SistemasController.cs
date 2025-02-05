@@ -1,10 +1,12 @@
 ﻿using CentralAdminApp.Domain.Dtos;
 using CentralAdminApp.Domain.Interfaces.Services;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CentralAdminApp.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class SistemasController : ControllerBase
@@ -16,7 +18,7 @@ namespace CentralAdminApp.API.Controllers
             _sistemaService = sistemaService;
         }
 
-        [HttpPost]
+        [HttpPost()]
         [ProducesResponseType(typeof(SistemaResponse), 201)]
         public IActionResult Post([FromBody] SistemaRequest dto)
         {

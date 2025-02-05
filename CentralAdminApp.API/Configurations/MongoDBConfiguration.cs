@@ -7,9 +7,9 @@ using CentralAdminApp.Domain.Helpers;
 
 namespace CentralAdminApp.API.Configurations
 {
-    public class MongoDBConfiguration
+    public static class MongoDBConfiguration
     {
-        public static void AddMongoDBConfiguration()
+        public static void AddMongoDBConfiguration(this IServiceCollection services)
         {
             if (!BsonClassMap.IsClassMapRegistered(typeof(int)))
             {
